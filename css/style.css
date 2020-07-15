@@ -61,6 +61,11 @@ h2 {
 	padding: 0 1rem;
 }
 
+#navbar h3 a {
+	color: #333;
+	font-size: 1.5rem;
+}
+
 #navbar ul {
 	display: flex;
 }
