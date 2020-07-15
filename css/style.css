@@ -85,7 +85,7 @@ h2 {
 #home {
 	margin-top: -4rem;
 	margin-bottom: -1.5rem;
-	background: url('../img/speak.png') no-repeat center center/cover;
+	background: url('../img/background.jpg') no-repeat center center/cover;
 }
 
 #home .overlay {
@@ -100,6 +100,7 @@ h2 {
 	padding-top: 10rem;
 	color: #fff;
 	font-size: 1.3rem;
+	position: relative;
 }
 
 #home h1 {
@@ -108,6 +109,19 @@ h2 {
 
 #home p {
 	padding: 0.5rem;
+}
+
+/* Countdown */
+#home .countdown {
+	font-weight: bold;
+	display: flex;
+	position: absolute;
+	bottom: 1.5rem;
+	left: 1.5rem;
+}
+
+#home .countdown p {
+	padding: 0 0.5rem;
 }
 
 /* ----------- About ------------ */
@@ -226,7 +240,6 @@ h2 {
 #schedule .tabs {
 	justify-content: center;
 }
-
 
 [data-tab-content] {
 	display: none;
@@ -389,7 +402,6 @@ h2 {
 	background: rgb(22, 15, 29);
 }
 
-
 /* hamburger */
 #navbar .nav {
 	border-bottom: 1px solid #EAEAEB;
@@ -418,4 +430,3 @@ h2 {
 #navbar #toggle {
 	display: none;
 }
-

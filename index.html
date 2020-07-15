@@ -27,7 +27,7 @@
 		</div>
 	</nav>
 
-	<header id="home">
+	<header id="home" class="parallax">
 		<div class="overlay">
 			<div class="container main-page">
 				<h1 class="my-1">Maldives Academic Forum</h1>
@@ -38,6 +38,24 @@
 				<p><i class="fas fa-calendar-alt"></i> 20 December 2020</p>
 				<p><i class="fas fa-map-marker-alt"></i> Ameenee Building, Ameenee Magu, Male
 					Maldives</p>
+				<div class="countdown">
+					<div id="day">
+						<p class="day"></p>
+						<p>Days</p>
+					</div>
+					<div id="hour">
+						<p class="hour"></p>
+						<p>Hours</p>
+					</div>
+					<div id="minute">
+						<p class="minute"></p>
+						<p>Minutes</p>
+					</div>
+					<div id="second">
+						<p class="second"></p>
+						<p>Seconds</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -45,7 +63,7 @@
 	<section id="about">
 		<div class="container p-all">
 			<div class="card">
-				<img src="img/conf1.jpg" alt="">
+				<img src="img/conf1.jpg" alt="about picture">
 				<div class="content">
 					<h2 class="my-0">About the forum</h2>
 					<p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis voluptates
@@ -70,42 +88,42 @@
 				<div class="box">
 					<div>
 						<div class="img-container">
-							<img src="img/person1.jpg" alt="">
+							<img src="img/person1.jpg" alt="speaker one">
 						</div>
 						<p>John Doe</p>
 						<p>Chancellor</p>
 					</div>
 					<div>
 						<div class="img-container">
-							<img src="img/person2.jpg" alt="">
+							<img src="img/person2.jpg" alt="speaker two">
 						</div>
 						<p>Mary Williamson</p>
 						<p>Vice Chancellor</p>
 					</div>
 					<div>
 						<div class="img-container">
-							<img src="img/person3.jpg" alt="">
+							<img src="img/person3.jpg" alt="speaker three">
 						</div>
 						<p>Mohamed Ali</p>
 						<p>Dean</p>
 					</div>
 					<div class="four">
 						<div class="img-container">
-							<img src="img/person4.jpg" alt="">
+							<img src="img/person4.jpg" alt="speaker four">
 						</div>
 						<p>Adam Smith</p>
 						<p>Senior Lecturer</p>
 					</div>
 					<div class="one">
 						<div class="img-container">
-							<img src="img/person5.jpg" alt="">
+							<img src="img/person5.jpg" alt="speaker five">
 						</div>
 						<p>Sarah Brown</p>
 						<p>Lecturer</p>
 					</div>
 					<div class="two">
 						<div class="img-container">
-							<img src="img/person6.jpg" alt="">
+							<img src="img/person6.jpg" alt="speaker six">
 						</div>
 						<p>Mike Davis</p>
 						<p>Lecturer</p>
@@ -130,7 +148,7 @@
 					</div>
 					<div class="person-group grp1">
 						<div class="person">
-							<img class="avatar" src="img/person1.jpg" alt="">
+							<img class="avatar" src="img/person1.jpg" alt="speaker one">
 							<h3>John Doe</h3>
 							<p class="time">9 am - 10:30 am</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -139,7 +157,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person2.jpg" alt="">
+							<img class="avatar" src="img/person2.jpg" alt="speaker two">
 							<h3>Mary Williamson</h3>
 							<p class="time">10:30 am - 11 am</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -148,7 +166,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person3.jpg" alt="">
+							<img class="avatar" src="img/person3.jpg" alt="speaker three">
 							<h3>Mohamed Ali</h3>
 							<p class="time">11 am - 12:30 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -165,7 +183,7 @@
 					</div>
 					<div class="person-group grp2">
 						<div class="person">
-							<img class="avatar" src="img/person4.jpg" alt="">
+							<img class="avatar" src="img/person4.jpg" alt="speaker four">
 							<h3>Adam Smith</h3>
 							<p class="time">1 - 1:30 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -174,7 +192,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person5.jpg" alt="">
+							<img class="avatar" src="img/person5.jpg" alt="speaker five">
 							<h3>Sarah Brown</h3>
 							<p class="time">1:30 - 2 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -183,7 +201,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person6.jpg" alt="">
+							<img class="avatar" src="img/person6.jpg" alt="speaker six">
 							<h3>Mike Davis</h3>
 							<p class="time">2:30 - 3 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -202,12 +220,12 @@
 	<section id="gallery">
 		<h2 class="my-1">Gallery</h2>
 		<div class="content">
-			<img class="one" src="img/forum1.jpg" alt="">
-			<img class="two" src="img/forum2.jpg" alt="">
-			<img class="three" src="img/forum3.jpg" alt="">
-			<img class="four" src="img/forum4.jpg" alt="">
-			<img class="five" src="img/forum5.jpg" alt="">
-			<img class="six" src="img/forum6.jpg" alt="">
+			<img class="one" src="img/forum1.jpg" alt=" forum picture one">
+			<img class="two" src="img/forum2.jpg" alt=" forum picture two">
+			<img class="three" src="img/forum3.jpg" alt=" forum picture three">
+			<img class="four" src="img/forum4.jpg" alt=" forum picture four">
+			<img class="five" src="img/forum5.jpg" alt="forum picture five">
+			<img class="six" src="img/forum6.jpg" alt=" forum picture six">
 		</div>
 	</section>
 
