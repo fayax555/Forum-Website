@@ -1,0 +1,180 @@
+/* ----navbar----- */
+#navbar .container {
+	display: block;
+}
+
+#navbar .icon {
+	color: #333;
+}
+
+#navbar h3 {
+	float: left;
+}
+
+#navbar label {
+	display: inline;
+	cursor: pointer;
+}
+
+#navbar .menu {
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+
+#navbar .menu li {
+	display: block;
+	border-bottom: 1px solid #EAEAEB;
+	margin: -2rem 0 -2rem;
+	font-size: 0.1rem;
+	background-color: #fff;
+}
+
+#toggle:checked + .menu {
+	display: block;
+	justify-self: right;
+}
+
+/* home */
+#home h1 {
+	font-size: 2.5rem;
+}
+
+#home p {
+	font-size: 1.1rem;
+}
+
+/* About */
+#about img {
+	display: none;
+}
+
+#about .card {
+	display: block;
+}
+
+/* Speakers */ 
+#speakers {
+	margin-bottom: -4rem;
+}
+
+#speakers .wrap{
+	padding-top: 1rem;
+}
+
+#speakers .box {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/* Schedule */
+#schedule {
+	padding: 3.25rem 0 0;
+}
+
+#schedule h2 {
+	margin-bottom: -1rem;
+	border-bottom: 1px dotted rgb(155, 4, 255);
+}
+
+#schedule .box {
+	display: grid;
+	text-align: center;
+}
+
+#schedule .tabs {
+	display: none;
+}
+
+#schedule .person-group {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+#schedule .person-group.grp2 {
+	display: block;
+}
+
+.schedule-date {
+	margin-top: 2rem;
+}
+
+.person {
+	display: block;
+	box-shadow: none;
+}
+
+#schedule #btn1 {
+	border-bottom: 10px solid rgb(155, 4, 255);
+}
+
+/* Gallery */
+#gallery {
+	padding-top: 4.5rem;
+	margin-top: -6rem;
+}
+
+#gallery .content {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+/* --- Register --- */
+#register {
+	padding: 3rem 0 3rem;
+}
+
+/* Footer */
+#main-footer .text {
+	grid-column: 1;
+}
+
+#main-footer .container {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 1rem;
+}
+
+.about-us h3 {
+	margin-bottom: -0.75rem;
+}
+
+.contact {
+	margin-top: 2rem;
+	padding-left: 0;
+}
+
+.socials {
+	padding-left: 0;
+	margin-top: 1.5rem;
+}
+
+.socials .break {
+	display: inline;
+}
+
+@media (max-width: 550px) {
+	#gallery .content {
+		grid-template-columns: 1fr;
+	}
+
+	#gallery img:last-child {
+		display: none;
+	}
+}
+
+@media (max-width: 380px) {
+	body {
+		line-height: 1.5;
+	}
+
+	#home h1 {
+		font-size: 1.7rem;
+		margin-top: -4rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.socials a i {
+		margin: 0rem 1.25rem 1.25rem 0;
+		font-size: 2.3rem;
+	}
+}
