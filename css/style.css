@@ -81,11 +81,36 @@ h2 {
 	color: rgb(121, 4, 255);
 }
 
+/* hamburger menu */
+#navbar .nav {
+	text-align: right;
+	height: 4rem;
+	line-height: 4rem;
+}
+
+#navbar .menu li {
+	text-decoration: none;
+	color: gray;
+	line-height: 4rem;
+	clear: both;
+}
+
+#navbar label {
+	font-size: 26px;
+	display: none;
+	width: 26px;
+}
+
+#navbar #toggle {
+	display: none;
+}
+
 /* ----------- Header ------------ */
 #home {
 	margin-top: -4rem;
 	margin-bottom: -1.5rem;
 	background: url('../img/background.jpg') no-repeat center center/cover;
+	color: #fff;
 }
 
 #home .overlay {
@@ -95,10 +120,9 @@ h2 {
 
 #home .main-page {
 	text-align: center;
-	height: 100vh;
+	min-height: 100vh;
 	padding: 0 3rem;
 	padding-top: 10rem;
-	color: #fff;
 	font-size: 1.3rem;
 	position: relative;
 }
@@ -115,9 +139,7 @@ h2 {
 #home .countdown {
 	font-weight: bold;
 	display: flex;
-	position: absolute;
-	bottom: 1.5rem;
-	left: 1.5rem;
+	padding: 1rem;
 }
 
 #home .countdown p {
@@ -402,31 +424,5 @@ h2 {
 	background: rgb(22, 15, 29);
 }
 
-/* hamburger */
-#navbar .nav {
-	border-bottom: 1px solid #EAEAEB;
-	text-align: right;
-	height: 70px;
-	line-height: 70px;
-}
 
-#navbar .menu {
-	margin: 0 30px 0 0;
-}
 
-#navbar .menu li {
-	text-decoration: none;
-	color: gray;
-	line-height: 70px;
-	clear: both;
-}
-
-#navbar label {
-	font-size: 26px;
-	display: none;
-	width: 26px;
-}
-
-#navbar #toggle {
-	display: none;
-}
