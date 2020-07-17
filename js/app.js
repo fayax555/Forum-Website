@@ -1,22 +1,41 @@
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
-const btn1 = document.querySelector('#btn1')
-const parallax = document.querySelector('.parallax');
+const $tabs = document.querySelectorAll('[data-tab-target]')
+const $tabContents = document.querySelectorAll('[data-tab-content]')
+const $btn1 = document.querySelector('#btn1')
+const $parallax = document.querySelector('.parallax');
 
 // parallax scroll effect
 window.addEventListener('scroll', e =>
-	parallax.style.backgroundPositionY = window.pageYOffset * 0.8 + 'px'
+	$parallax.style.backgroundPositionY = window.pageYOffset * 0.8 + 'px'
 )
 
+// adding navbar menu background color
+const $navbar = document.querySelector('#navbar');
+const $navbarTitle = document.querySelector('#navbar h3 a')
+const $navbarLinks = document.querySelectorAll('#navbar ul li a');
+window.addEventListener('scroll', e => {
+	if (window.scrollY > 100) {
+		$navbar.style.background = '#fff'
+		$navbar.style.boxShadow = '0px 1px 2px 2px rgba(129, 50, 209, 0.28)'
+		$navbarTitle.style.color = '#000'
+		$navbarLinks.forEach(item => item.style.color = '#000')
+	} else {
+		$navbar.removeAttribute('style')
+		$navbarTitle.style.color = '#fff'
+		$navbarLinks.forEach(item => {
+			item.style.color = '#fff'
+		})
+	}
+})
+
 // tabs to change schedule date
-btn1.classList.add('active')
-tabs.forEach(tab => {
+$btn1.classList.add('active')
+$tabs.forEach(tab => {
 	tab.addEventListener('click', e => {
 		const target = document.querySelector(tab.dataset.tabTarget)
-		tabContents.forEach(tabContent =>
+		$tabContents.forEach(tabContent =>
 			tabContent.classList.remove('active')
 		)
-		tabs.forEach(tab =>
+		$tabs.forEach(tab =>
 			tab.classList.remove('active')
 		)
 		setTimeout(() => {
@@ -27,13 +46,8 @@ tabs.forEach(tab => {
 })
 
 // Countdown Timer
-// targetDate is 20 Dec 2020 at 00:00
+// targetDate is 20 Dec 2020 at 09:00
 const targetDate = new Date(2020, 12, 20, 9, 0, 0, 0);
-
-const $day = document.querySelector('.day'),
-	$hour = document.querySelector('.hour'),
-	$min = document.querySelector('.minute'),
-	$sec = document.querySelector('.second');
 
 const format = (num) => {
 	str = num.toString(); // convert number to string
@@ -47,10 +61,9 @@ setInterval(() => {
 		minRemaing = Math.floor(remainingTime / 1000 / 60) % 60,
 		secRemaing = Math.floor(remainingTime / 1000) % 60;
 
-	$day.textContent = format(dayRemaing)
-	$hour.textContent = format(hourRemaing)
-	$min.textContent = format(minRemaing)
-	$sec.textContent = format(secRemaing)
+	// jquery
+	$('.day').text(format(dayRemaing))
+	$('.hour').text(format(hourRemaing))
+	$('.minute').text(format(minRemaing))
+	$('.second').text(format(secRemaing))
 }, 10);
-
-

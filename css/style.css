@@ -25,7 +25,7 @@ li {
 
 a {
 	text-decoration: none;
-	color: #f4f4f4;
+	color: #fff;
 }
 
 h2 {
@@ -48,8 +48,6 @@ h2 {
 /* ------ navbar ------- */
 
 #navbar {
-	background-color: #fff;
-	box-shadow: 0px 1px 2px 2px rgba(129, 50, 209, 0.28);
 	position: sticky;
 	top: 0;
 	z-index: 1;
@@ -62,7 +60,6 @@ h2 {
 }
 
 #navbar h3 a {
-	color: #333;
 	font-size: 1.5rem;
 }
 
@@ -70,15 +67,14 @@ h2 {
 	display: flex;
 }
 
-#navbar ul li a {
-	padding: 1em;
-	color: #000;
+#navbar li a {
+	padding: 1rem;
 	font-size: 1.15rem;
 	transition: 0.3s ease-in-out;
 }
 
 #navbar ul li a:hover {
-	color: rgb(121, 4, 255);
+	color: rgb(121, 4, 255) !important;
 }
 
 /* hamburger menu */
@@ -90,7 +86,6 @@ h2 {
 
 #navbar .menu li {
 	text-decoration: none;
-	color: gray;
 	line-height: 4rem;
 	clear: both;
 }
@@ -365,7 +360,6 @@ h2 {
 /* Footer */
 #main-footer {
 	background: rgb(13, 3, 20);
-	/* background-color: #333; */
 	color: #fff;
 	padding: 1.5rem 1rem;
 }
