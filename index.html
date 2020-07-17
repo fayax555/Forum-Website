@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 775px)">
 	<title>Maldives Academic Forum</title>
@@ -63,7 +64,7 @@
 	<section id="about">
 		<div class="container p-all">
 			<div class="card">
-				<img src="img/conf1.jpg" alt="about picture">
+				<img src="images/conf1.jpg" alt="about picture">
 				<div class="content">
 					<h2 class="my-0">About the forum</h2>
 					<p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis voluptates
@@ -88,42 +89,42 @@
 				<div class="box">
 					<div>
 						<div class="img-container">
-							<img src="img/person1.jpg" alt="speaker one">
+							<img src="images/person1.jpg" alt="speaker one">
 						</div>
 						<p>John Doe</p>
 						<p>Chancellor</p>
 					</div>
 					<div>
 						<div class="img-container">
-							<img src="img/person2.jpg" alt="speaker two">
+							<img src="images/person2.jpg" alt="speaker two">
 						</div>
 						<p>Mary Williamson</p>
 						<p>Vice Chancellor</p>
 					</div>
 					<div>
 						<div class="img-container">
-							<img src="img/person3.jpg" alt="speaker three">
+							<img src="images/person3.jpg" alt="speaker three">
 						</div>
 						<p>Mohamed Ali</p>
 						<p>Dean</p>
 					</div>
 					<div class="four">
 						<div class="img-container">
-							<img src="img/person4.jpg" alt="speaker four">
+							<img src="images/person4.jpg" alt="speaker four">
 						</div>
 						<p>Adam Smith</p>
 						<p>Senior Lecturer</p>
 					</div>
 					<div class="one">
 						<div class="img-container">
-							<img src="img/person5.jpg" alt="speaker five">
+							<img src="images/person5.jpg" alt="speaker five">
 						</div>
 						<p>Sarah Brown</p>
 						<p>Lecturer</p>
 					</div>
 					<div class="two">
 						<div class="img-container">
-							<img src="img/person6.jpg" alt="speaker six">
+							<img src="images/person6.jpg" alt="speaker six">
 						</div>
 						<p>Mike Davis</p>
 						<p>Lecturer</p>
@@ -148,7 +149,7 @@
 					</div>
 					<div class="person-group grp1">
 						<div class="person">
-							<img class="avatar" src="img/person1.jpg" alt="speaker one">
+							<img class="avatar" src="images/person1.jpg" alt="speaker one">
 							<h3>John Doe</h3>
 							<p class="time">9 am - 10:30 am</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -157,7 +158,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person2.jpg" alt="speaker two">
+							<img class="avatar" src="images/person2.jpg" alt="speaker two">
 							<h3>Mary Williamson</h3>
 							<p class="time">10:30 am - 11 am</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -166,7 +167,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person3.jpg" alt="speaker three">
+							<img class="avatar" src="images/person3.jpg" alt="speaker three">
 							<h3>Mohamed Ali</h3>
 							<p class="time">11 am - 12:30 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -183,7 +184,7 @@
 					</div>
 					<div class="person-group grp2">
 						<div class="person">
-							<img class="avatar" src="img/person4.jpg" alt="speaker four">
+							<img class="avatar" src="images/person4.jpg" alt="speaker four">
 							<h3>Adam Smith</h3>
 							<p class="time">1 - 1:30 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -192,7 +193,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person5.jpg" alt="speaker five">
+							<img class="avatar" src="images/person5.jpg" alt="speaker five">
 							<h3>Sarah Brown</h3>
 							<p class="time">1:30 - 2 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -201,7 +202,7 @@
 								esse</p>
 						</div>
 						<div class="person">
-							<img class="avatar" src="img/person6.jpg" alt="speaker six">
+							<img class="avatar" src="images/person6.jpg" alt="speaker six">
 							<h3>Mike Davis</h3>
 							<p class="time">2:30 - 3 pm</p>
 							<p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, esse. lorem inpsum amet
@@ -218,12 +219,18 @@
 	<section id="gallery">
 		<h2 class="my-1">Gallery</h2>
 		<div class="content">
-			<img class="one" src="img/forum1.jpg" alt=" forum picture one">
-			<img class="two" src="img/forum2.jpg" alt=" forum picture two">
-			<img class="three" src="img/forum3.jpg" alt=" forum picture three">
-			<img class="four" src="img/forum4.jpg" alt=" forum picture four">
-			<img class="five" src="img/forum5.jpg" alt="forum picture five">
-			<img class="six" src="img/forum6.jpg" alt=" forum picture six">
+			<a href="images/forum1.jpg" data-lightbox="mygallary"><img class="one" src="images/forum1.jpg"
+					alt=" forum picture one"></a>
+			<a href="images/forum2.jpg" data-lightbox="mygallary"><img class="two" src="images/forum2.jpg"
+					alt=" forum picture two"></a>
+			<a href="images/forum3.jpg" data-lightbox="mygallary"><img class="three" src="images/forum3.jpg"
+					alt=" forum picture three"></a>
+			<a href="images/forum4.jpg" data-lightbox="mygallary"><img class="four" src="images/forum4.jpg"
+					alt=" forum picture four"></a>
+			<a href="images/forum5.jpg" data-lightbox="mygallary"><img class="five" src="images/forum5.jpg"
+					alt="forum picture five"></a>
+			<a href="images/forum6.jpg" data-lightbox="mygallary"><img class="six" src="images/forum6.jpg"
+					alt=" forum picture six"></a>
 		</div>
 	</section>
 
@@ -296,6 +303,7 @@
 		</div>
 	</footer>
 
+	<script src="js/lightbox-plus-jquery.min.js"></script>
 	<script src="app.js"></script>
 </body>
 
