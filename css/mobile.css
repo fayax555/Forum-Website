@@ -14,6 +14,7 @@
 #navbar label {
 	display: inline;
 	cursor: pointer;
+	color: #fff;
 }
 
 #navbar .menu {
@@ -24,10 +25,13 @@
 
 #navbar .menu li {
 	display: block;
-	border-bottom: 1px solid #EAEAEB;
 	margin: -2rem 0 -2rem;
 	font-size: 0.1rem;
 	background-color: #fff;
+}
+
+#navbar .menu a {
+	color: #000 !important;
 }
 
 #toggle:checked + .menu {

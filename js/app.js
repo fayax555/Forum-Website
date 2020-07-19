@@ -1,33 +1,33 @@
-const $tabs = document.querySelectorAll('[data-tab-target]')
-const $tabContents = document.querySelectorAll('[data-tab-content]')
-const $btn1 = document.querySelector('#btn1')
-const $parallax = document.querySelector('.parallax');
-
 // parallax scroll effect
+const $parallax = document.querySelector('.parallax');
 window.addEventListener('scroll', e =>
 	$parallax.style.backgroundPositionY = window.pageYOffset * 0.8 + 'px'
 )
 
-// adding navbar menu background color
-const $navbar = document.querySelector('#navbar');
-const $navbarTitle = document.querySelector('#navbar h3 a')
-const $navbarLinks = document.querySelectorAll('#navbar ul li a');
+// adding navbar menu styles when the page is scrolled
+const $navbar = document.querySelector('#navbar'),
+	$navbarTitle = document.querySelector('#navbar h3 a'),
+	$navbarLinks = document.querySelectorAll('#navbar ul li a'),
+	$navbarIcon = document.querySelector('#navbar label');
 window.addEventListener('scroll', e => {
 	if (window.scrollY > 100) {
 		$navbar.style.background = '#fff'
 		$navbar.style.boxShadow = '0px 1px 2px 2px rgba(129, 50, 209, 0.28)'
 		$navbarTitle.style.color = '#000'
+		$navbarIcon.style.color = '#000'
 		$navbarLinks.forEach(item => item.style.color = '#000')
 	} else {
 		$navbar.removeAttribute('style')
 		$navbarTitle.style.color = '#fff'
-		$navbarLinks.forEach(item => {
-			item.style.color = '#fff'
-		})
+		$navbarIcon.style.color = '#fff'
+		$navbarLinks.forEach(item => item.style.color = '#fff')
 	}
 })
 
 // tabs to change schedule date
+const $tabs = document.querySelectorAll('[data-tab-target]'),
+	$tabContents = document.querySelectorAll('[data-tab-content]'),
+	$btn1 = document.querySelector('#btn1');
 $btn1.classList.add('active')
 $tabs.forEach(tab => {
 	tab.addEventListener('click', e => {
@@ -35,9 +35,7 @@ $tabs.forEach(tab => {
 		$tabContents.forEach(tabContent =>
 			tabContent.classList.remove('active')
 		)
-		$tabs.forEach(tab =>
-			tab.classList.remove('active')
-		)
+		$tabs.forEach(tab => tab.classList.remove('active'))
 		setTimeout(() => {
 			tab.classList.add('active')
 			target.classList.add('active')
