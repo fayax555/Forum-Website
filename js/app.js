@@ -9,6 +9,7 @@ const $navbar = document.querySelector('#navbar'),
 	$navbarTitle = document.querySelector('#navbar h3 a'),
 	$navbarLinks = document.querySelectorAll('#navbar ul li a'),
 	$navbarIcon = document.querySelector('#navbar label');
+
 window.addEventListener('scroll', e => {
 	if (window.scrollY > 100) {
 		$navbar.style.background = '#fff'
@@ -28,6 +29,7 @@ window.addEventListener('scroll', e => {
 const $tabs = document.querySelectorAll('[data-tab-target]'),
 	$tabContents = document.querySelectorAll('[data-tab-content]'),
 	$btn1 = document.querySelector('#btn1');
+
 $btn1.classList.add('active')
 $tabs.forEach(tab => {
 	tab.addEventListener('click', e => {
@@ -46,7 +48,6 @@ $tabs.forEach(tab => {
 // Countdown Timer
 // targetDate is 20 Dec 2020 at 09:00
 const targetDate = new Date(2020, 12, 20, 9, 0, 0, 0);
-
 const format = (num) => {
 	str = num.toString(); // convert number to string
 	return str.length > 1 ? str : '0' + str;

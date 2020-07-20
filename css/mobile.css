@@ -123,6 +123,26 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 
+/* Reviews */
+#reviews .content .item {
+	display: block;
+}
+
+#reviews .img {
+	width: 20%;
+	display: block;
+	margin: auto;
+}
+
+/* -- News --- */
+#news .content {
+	display: block;
+}
+
+#news .content > div {
+	padding: 1rem;
+}
+
 /* --- Register --- */
 #register {
 	padding: 3rem 0 3rem;
@@ -157,11 +177,31 @@
 	display: inline;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 755px) {
+	#sponsors img {
+		max-width: 120px;
+	}
+
+	#sponsors .logo2 {
+		width: 110px;
+	}
+}
+
+@media (max-width: 555px) {
 	#gallery .content {
 		grid-template-columns: 1fr;
 	}
 
+	/* sponsors */
+	#sponsors .container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	#sponsors .content,
+	#sponsors img {
+		padding: 0.5rem;
+	}
 }
 
 @media (max-width: 400px) and (max-height: 600px) {
