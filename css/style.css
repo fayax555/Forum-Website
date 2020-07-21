@@ -46,6 +46,10 @@ h2 {
 }
 
 /* ------ navbar ------- */
+#navbar {
+	z-index: 1;
+	position: relative;
+}
 
 #navbar .container {
 	display: flex;
