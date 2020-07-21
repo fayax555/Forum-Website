@@ -148,7 +148,6 @@ h2 {
 
 #about img {
 	width: 100%;
-	padding-top: 2rem;
 }
 
 #about .card {
@@ -432,7 +431,7 @@ h2 {
 
 #register input:hover,
 #register input:focus {
-	box-shadow: 0px 0px 4px 4px rgba(44, 43, 104, 0.28);
+	box-shadow: 0px 0px 4px 4px rgba(72, 94, 216, 0.28);
 }
 
 #register input[type='submit']:hover {
