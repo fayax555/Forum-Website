@@ -5,23 +5,29 @@ window.addEventListener('scroll', e =>
 )
 
 // adding navbar menu styles when the page is scrolled
-const $navbar = document.querySelector('#navbar'),
-	$navbarTitle = document.querySelector('#navbar h3 a'),
-	$navbarLinks = document.querySelectorAll('#navbar ul li a'),
-	$navbarIcon = document.querySelector('#navbar label');
+const $navbar = $('#navbar'),
+	$navbarTitle = $('#navbar h3 a'),
+	$navbarLinks = $('#navbar ul li a'),
+	$navbarIcon = $('#navbar label');
 
+const addColor = (color) => {
+	$navbarTitle.css('color', color)
+	$navbarIcon.css('color', color)
+	$navbarLinks.css('color', color)
+}
 window.addEventListener('scroll', e => {
 	if (window.scrollY > 100) {
-		$navbar.style.background = '#fff'
-		$navbar.style.boxShadow = '0px 1px 2px 2px rgba(129, 50, 209, 0.28)'
-		$navbarTitle.style.color = '#000'
-		$navbarIcon.style.color = '#000'
-		$navbarLinks.forEach(item => item.style.color = '#000')
+		$navbar.css({
+			'background': '#fff',
+			'box-shadow': '0px 1px 2px 2px rgba(129, 50, 209, 0.28)',
+			'position': 'sticky',
+			'top': 0,
+			'z-index': 1
+		})
+		addColor('#000')
 	} else {
-		$navbar.removeAttribute('style')
-		$navbarTitle.style.color = '#fff'
-		$navbarIcon.style.color = '#fff'
-		$navbarLinks.forEach(item => item.style.color = '#fff')
+		$navbar.removeAttr('style')
+		addColor('#fff')
 	}
 })
 
@@ -60,7 +66,6 @@ setInterval(() => {
 		minRemaing = Math.floor(remainingTime / 1000 / 60) % 60,
 		secRemaing = Math.floor(remainingTime / 1000) % 60;
 
-	// jquery
 	$('.day').text(format(dayRemaing))
 	$('.hour').text(format(hourRemaing))
 	$('.minute').text(format(minRemaing))

@@ -47,11 +47,11 @@ h2 {
 
 /* ------ navbar ------- */
 
-#navbar {
+/* #navbar {
 	position: sticky;
 	top: 0;
 	z-index: 1;
-}
+} */
 
 #navbar .container {
 	display: flex;
@@ -74,7 +74,7 @@ h2 {
 }
 
 #navbar ul li a:hover {
-	color: rgb(121, 4, 255) !important;
+	color: #53cfd8 !important;
 }
 
 /* hamburger menu */
@@ -478,7 +478,6 @@ h2 {
 	padding-right: 1rem;
 	font-size: 1.3rem;
 }
-
 
 .socials .break {
 	display: block;
