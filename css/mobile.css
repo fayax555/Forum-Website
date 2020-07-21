@@ -203,6 +203,12 @@
 	#sponsors img {
 		padding: 0.5rem;
 	}
+
+	#reviews .img {
+		width: 40%;
+		display: block;
+		margin: auto;
+	}
 }
 
 @media (max-width: 400px) and (max-height: 600px) {
